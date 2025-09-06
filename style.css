@@ -131,9 +131,10 @@ h1 {
 .cards p {
   font-size: 13px;
   font-family: "Inter tight";
+  font-weight: 300;
 }
 
-.immg {
+.immgs {
   margin-bottom: 1rem;
   max-width: 10%;
 }
