@@ -1,0 +1,139 @@
+/* ================================================ */
+/* GOOGLE FONT IMPORT */
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* RESET DEFAULT STYLES */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* ================= HEADER / MAIN TITLE ================= */
+h1 {
+  display: flex; /* flexbox to center text horizontally and vertically */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: black;
+  font-family: "Inter tight";
+  font-size: 40px;
+  font-weight: 600;
+  margin: auto; /* centers horizontally */
+  line-height: 120%;
+  width: 30rem; /* fixed width for readability */
+  padding: 3rem;
+  margin-top: 2rem;
+}
+
+/* ================= MIDDLE PART / FEATURE BOXES ================= */
+.main-box {
+  display: flex; /* layout: left features, center circle, right features */
+  justify-content: center;
+  align-items: center;
+  gap: 4rem; /* spacing between left/center/right sections */
+  max-width: 76rem;
+  margin: 3rem auto; /* centers container */
+}
+
+.center-food,
+.center-food2 {
+  display: flex;
+  flex-direction: column; /* stack features vertically */
+  gap: 8rem; /* spacing between features */
+}
+
+.food-box1 {
+  display: flex; /* icon + text horizontally */
+  align-items: flex-start; /* aligns text with top of icon */
+  max-width: 100%;
+  gap: 1rem; /* spacing between icon and text */
+}
+
+.food-box1 img {
+  max-width: 30%;
+  height: 50%;
+}
+
+.food-box1 h3 {
+  font-size: 19px;
+  font-family: "Inter tight";
+  font-style: "semi-bold ";
+}
+
+.parh {
+  font-size: 16px;
+  gap: 1rem;
+  font-family: "Inter tight";
+  font-weight: 300;
+  line-height: 150%;
+}
+
+/* ================= DOG FOOD PICTURE / CENTER CIRCLE ================= */
+.split {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* allows overlay images to be positioned */
+}
+
+.img1 {
+  position: relative; /* main circle relative to container */
+  height: auto;
+}
+
+.img2 {
+  position: absolute; /* overlay image on left */
+  margin-right: 180px; /* distance from center */
+}
+
+.img3 {
+  position: absolute; /* overlay image on right */
+  margin-left: 2.8rem;
+  margin-right: 2.5rem;
+}
+
+/* ================= CALL TO ACTION BUTTON ================= */
+.main-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.button {
+  display: flex;
+  border-radius: 0.5rem;
+  justify-content: center;
+  padding: 0.7rem;
+  text-align: center;
+  width: 27%;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #ee6f4b;
+  color: #ffffff;
+  font-family: "Inter tight";
+  letter-spacing: 0.5px;
+  line-height: 150%;
+  margin: auto;
+  cursor: pointer;
+}
+
+/* ================= GUARANTEE & PAYMENT LOGOS ================= */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.cards p {
+  font-size: 13px;
+  font-family: "Inter tight";
+}
+
+.immg {
+  margin-bottom: 1rem;
+  max-width: 10%;
+}
